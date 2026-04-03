@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "笔记"
+    },
+    {
+      "name": "read_imagevideo_reason",
+      "value": "用于读取用户选择的图片和视频文件。"
+    },
+    {
+      "name": "read_audio_reason",
+      "value": "用于读取用户选择的音频文件。"
+    },
+    {
+      "name": "read_document_reason",
+      "value": "用于读取用户选择的文档文件。"
+    },
+    {
+      "name": "internet_reason",
+      "value": "用于连接网络服务。"
+    }
+  ]
+}

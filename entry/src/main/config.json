@@ -1,0 +1,88 @@
+{
+  "app": {
+    "bundleName": "com.harmony.noteapp",
+    "vendor": "harmony",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 9,
+      "target": 9
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "process": "com.harmony.noteapp",
+      "supportBackup": false
+    }
+  },
+  "module": {
+    "package": "com.harmony.noteapp",
+    "name": "entry",
+    "mainAbility": "MainAbility",
+    "deviceTypes": ["phone"],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "读取媒体文件以添加图片",
+        "usedScene": {
+          "ability": ["MainAbility"],
+          "when": "use"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA",
+        "reason": "写入媒体文件以保存图片",
+        "usedScene": {
+          "ability": ["MainAbility"],
+          "when": "use"
+        }
+      },
+      {
+        "name": "ohos.permission.CAMERA",
+        "reason": "使用相机拍摄图片",
+        "usedScene": {
+          "ability": ["MainAbility"],
+          "when": "use"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE",
+        "reason": "读取存储以选择文档",
+        "usedScene": {
+          "ability": ["MainAbility"],
+          "when": "use"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE",
+        "reason": "写入存储以保存文档",
+        "usedScene": {
+          "ability": ["MainAbility"],
+          "when": "use"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "name": "MainAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "笔记管理应用",
+        "icon": "$media:icon",
+        "label": "笔记",
+        "formsEnabled": false,
+        "orientation": "portrait",
+        "type": "page",
+        "visible": true,
+        "launchType": "standard"
+      }
+    ],
+    "pages": ["pages/Index", "pages/EditNote"]
+  }
+}

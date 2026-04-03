@@ -1,0 +1,12 @@
+{
+  "name": "harmony_note_app",
+  "version": "1.0.0",
+  "description": "HarmonyOS学习笔记管理应用",
+  "main": "entry/src/main/ets/MainAbility.ts",
+  "scripts": {
+    "build": "hvigor build"
+  },
+  "devDependencies": {
+    "@ohos/hvigor": "latest"
+  }
+}
